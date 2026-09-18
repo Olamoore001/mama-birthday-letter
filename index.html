@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>A Special Letter for Mama ❤️</title>
+    <meta
+      name="description"
+      content="A gift, a letter, and a birthday, for Mama."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Decorative layer: petals, sparkles, confetti injected here by script.js -->
+    <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+
+    <!-- Discreet floating music control -->
+    <button
+      id="musicToggle"
+      class="music-toggle"
+      aria-label="Play background music"
+      aria-pressed="false"
+    >
+      <span class="music-icon" id="musicIcon">&#128266;</span>
+    </button>
+
+    <audio id="backgroundMusic" loop preload="auto">
+      <source src="sub_clair-happy-birthday-578363.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main id="stage" class="stage">
+      <!-- ============================================================ -->
+      <!-- SCENE: OPENING -->
+      <!-- ============================================================ -->
+      <section class="scene is-active" id="scene-opening" data-scene="opening">
+        <div class="scene-inner opening-inner">
+          <!--  OPENING TEXT HERE -->
+          <p class="opening-line" id="openingLine1">
+            For Someone Very Special&hellip;
+          </p>
+          <p class="opening-line opening-line--delay" id="openingLine2">
+            A little something from my heart.
+          </p>
+          <button
+            class="btn btn--primary opening-cta"
+            id="openGiftBtn"
+            type="button"
+          >
+            Open My Gift <span aria-hidden="true">&#10084;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: ENVELOPE -->
+      <!-- ============================================================ -->
+      <section class="scene" id="scene-envelope" data-scene="envelope">
+        <div class="scene-inner envelope-inner">
+          <div class="envelope-wrap" id="envelopeWrap">
+            <div
+              class="envelope"
+              id="envelope"
+              tabindex="0"
+              role="button"
+              aria-label="Open the envelope"
+            >
+              <div class="envelope-shadow"></div>
+              <div class="envelope-back"></div>
+              <div class="envelope-letter-peek" id="envelopeLetterPeek">
+                <p class="peek-greeting">Dear Mama,</p>
+              </div>
+              <div class="envelope-front">
+                <div class="envelope-front-left"></div>
+                <div class="envelope-front-right"></div>
+              </div>
+              <div class="envelope-flap" id="envelopeFlap">
+                <div class="envelope-seal" id="envelopeSeal">
+                  <span aria-hidden="true">&#10084;</span>
+                </div>
+              </div>
+            </div>
+            <p class="envelope-label">
+              For Mama <span aria-hidden="true">&#10084;</span>
+            </p>
+            <p class="envelope-label envelope-label--small">
+              With love, Horlaholuwa
+            </p>
+            <button class="tap-prompt" id="tapPrompt" type="button">
+              Tap to open
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: LETTER -->
+      <!-- ============================================================ -->
+      <section class="scene" id="scene-letter" data-scene="letter">
+        <div class="scene-inner letter-inner">
+          <article class="paper" id="paperLetter">
+            <p class="paper-kicker">What You Mean To Me Ma</p>
+            <h1 class="paper-heading">
+              Dear Mama, <span aria-hidden="true">&#10084;</span>
+            </h1>
+
+            <!--  LETTER CONTENT HERE -->
+            <div class="paper-body" id="letterBody">
+              <p>
+                I have been thinking about how to properly express what you mean
+                to me ma, and honestly,I don't think a few words could ever
+                fully express it.</p>
+              </p>
+
+              <p>
+                There are people who pass through our lives, and there are people whose presence becomes part of our story. You are one of those people for me, Ma — someone I have come to see as second only to my own mother.
+              </p>
+
+              <p>
+               You are not simply my pastor's wife. You have become someone I genuinely see as a motherly figure in my life. Someone who cares about me, checks on me, encourages me, corrects me, prays for me, and genuinely wants to see me become better.
+              </p>
+
+              <p>
+               You have been there for different parts of my life. You have cared for me physically, emotionally, spiritually, academically, and even in the journey of discovering and developing the gifts and skills God has placed in me.
+              </p>
+
+              <p>
+                You have encouraged my education. You have encouraged my web development. You have encouraged my graphic design. You have encouraged me to keep learning, keep growing, and keep becoming better.
+              </p>
+
+              <p>
+                But, Ma, what means even more to me is knowing that your care for me goes beyond what people may see from the outside. <br>
+There have been many times when I didn't understand what God was trying to communicate to me, and somehow, He would use you to help me understand. There have been moments when you would tell me something, counsel me, correct me, or give me direction about something I hadn't even told you.
+And those moments have made me realize that your place in my life is not something I should take for granted.
+              </p>
+
+                <p>
+                I believe God has deliberately placed you in my life for a reason. You have become one of the people He uses to watch over me, guide me, encourage me, correct me, and remind me of the person He is helping me become.
+              </p>
+
+                <p>
+               So when I think about what you mean to me, I don't just think about the things you have done for me. I think about the kind of person you have been to me and the impact your presence has had on my life.
+              </p>
+
+                <p>
+               You are someone whose presence has become part of my story.
+              </p>
+
+                <p>
+               And for that, Ma, I am deeply grateful. ❤️
+              </p>
+            </div>
+            <!-- END  LETTER CONTENT -->
+
+            <button
+              class="btn btn--ghost paper-continue"
+              data-next="thankyou"
+              type="button"
+            >
+              Continue <span aria-hidden="true">&#10084;</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: THANK YOU -->
+      <!-- ============================================================ -->
+      <section class="scene" id="scene-thankyou" data-scene="thankyou">
+        <div class="scene-inner thankyou-inner">
+          <h1 class="reveal-heading" id="thankYouHeading">Thank You Ma.</h1>
+          <p class="thankyou-subtitle" id="thankYouSubtitle">
+            There are some things I simply want you to know Ma.
+          </p>
+
+          <div class="thankyou-lines" id="thankyouLines">
+            <p class="thankyou-line">Thank you for your care.</p>
+            <p class="thankyou-line">Thank you for your kindness.</p>
+            <p class="thankyou-line">Thank you for your prayers.</p>
+            <p class="thankyou-line">Thank you for your encouragement.</p>
+            <p class="thankyou-line">
+              Thank you for being someone I genuinely appreciate.
+            </p>
+          </div>
+
+          <!--  THANK YOU MESSAGE HERE -->
+          <div class="thankyou-body" id="thankyouBody">
+            <p>
+              Some people fill a role in your life. Others fill a place in your
+              heart. You have done the second, and I don't take that for
+              granted ma. Thank you for every prayer said quietly on my behalf, and
+              for every word of encouragement that came at exactly the right
+              time.
+            </p>
+          </div>
+          <!-- END  THANK YOU MESSAGE -->
+
+          <button class="btn btn--ghost" data-next="prayer" type="button">
+            Continue <span aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: PRAYER -->
+      <!-- ============================================================ -->
+      <section class="scene scene--dark" id="scene-prayer" data-scene="prayer">
+        <div class="scene-inner prayer-inner">
+          <p class="prayer-intro" id="prayerIntro1">Before I finish&hellip;</p>
+          <p class="prayer-intro prayer-intro--delay" id="prayerIntro2">
+            This is my prayer for you Ma.
+          </p>
+
+          <!--  PRAYER HERE -->
+          <div class="prayer-body" id="prayerBody">
+            <p>Father, I thank You for the gift of her life.</p>
+            <p>
+              Thank You for the woman she is, for her heart, her strength, her
+              kindness and the love she gives to others.
+            </p>
+            <p>
+              As she begins another year, may You continue to guide her,
+              strengthen her and surround her with Your presence.
+            </p>
+            <p>
+              May this new year bring her peace, joy, wisdom and beautiful
+              reasons to be grateful.
+            </p>
+            <p>
+              May You preserve her, bless the work of her hands and cause her to
+              experience the goodness of Your promises.
+            </p>
+            <p>
+              May she continue to grow in grace and remain a blessing to
+              everyone around her.
+            </p>
+            <p>In Jesus' name.</p>
+          </div>
+          <!-- END  PRAYER -->
+
+          <p class="prayer-amen" id="prayerAmen">
+            Amen. <span aria-hidden="true">&#10084;</span>
+          </p>
+
+          <button
+            class="btn btn--ghost prayer-continue"
+            id="prayerContinueBtn"
+            data-next="secret"
+            type="button"
+          >
+            Continue
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: SECRET TRANSITION -->
+      <!-- ============================================================ -->
+      <section class="scene scene--dark" id="scene-secret" data-scene="secret">
+        <div class="scene-inner secret-inner">
+          <div class="secret-glow" id="secretGlow"></div>
+          <p class="secret-line" id="secretLine">
+            There&rsquo;s one last thing&hellip;
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: BIRTHDAY REVEAL -->
+      <!-- ============================================================ -->
+      <section
+        class="scene scene--celebrate"
+        id="scene-birthday"
+        data-scene="birthday"
+      >
+        <div class="scene-inner birthday-inner">
+          <div class="reveal-word-stack" id="revealWordStack">
+            <span class="reveal-word reveal-word--happy" id="wordHappy"
+              >HAPPY</span
+            >
+            <span class="reveal-word reveal-word--birthday" id="wordBirthday"
+              >BIRTHDAY</span
+            >
+            <span class="reveal-word reveal-word--mummy" id="wordMummy"
+              >MAMA! <span aria-hidden="true">&#10084;</span></span
+            >
+          </div>
+          <p class="reveal-date" id="revealDate">September 20</p>
+
+          <!-- EDIT BIRTHDAY MESSAGE HERE -->
+          <div class="birthday-body" id="birthdayBody">
+            <p>Mama, today is a special reminder of the beautiful gift your life is to so many people, and especially to me.</p>
+            <p>
+              I am grateful for every moment, every prayer, every word of encouragement, every correction, and every act of love and care you have shown me.
+            </p>
+            <p>
+             I may not always have the right words to express it, but please know that you are deeply appreciated, deeply loved, and never taken for granted.
+            </p>
+            <p>
+            Thank you for being part of my story, Mama.❤️🎂
+            </p>
+            <p>
+              Happy Birthday, Mama. <span aria-hidden="true">&#10084;</span>
+            </p>
+          </div>
+          <!-- END  BIRTHDAY MESSAGE -->
+
+          <button
+            class="btn btn--ghost birthday-continue"
+            data-next="lastthing"
+            type="button"
+          >
+            Continue <span aria-hidden="true">&#10084;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: ONE LAST THING -->
+      <!-- ============================================================ -->
+      <section class="scene" id="scene-lastthing" data-scene="lastthing">
+        <div class="scene-inner lastthing-inner">
+          <p class="lastthing-line">One Last Thing&hellip;</p>
+          <button class="btn btn--primary" id="openLastBtn" type="button">
+            Open <span aria-hidden="true">&#10084;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SCENE: FINAL -->
+      <!-- ============================================================ -->
+      <section class="scene" id="scene-final" data-scene="final">
+        <div class="scene-inner final-inner">
+          <article class="paper paper--final">
+            <!--  FINAL MESSAGE HERE -->
+            <div class="paper-body" id="finalBody">
+              <p>
+                I know this isn't a gift wrapped in a box. It isn't something I
+                bought from a store.
+              </p>
+              <p>
+              I put my time, creativity, skills, and most importantly, my heart into it.
+              </p>
+              <p>
+              I wanted to give you something that would remind you of how much you mean to me and how grateful I am for everything you have done and continue to do.
+              </p>
+              <p>
+               So this little digital letter is my gift to you, Ma. It may live on a screen, but every word behind it comes from a genuine place in my heart. And whenever you want to see it again, it will always be here, reminding you of how much you mean to me. ❤️
+
+              </p>
+              <p>
+                Thank you for being part of my life, Ma.Happy Birthday once again, Mama. ❤️🎂
+                <span aria-hidden="true">&#10084;</span>
+              </p>
+            </div>
+            <!-- END  FINAL MESSAGE -->
+          </article>
+
+          <div class="signature" id="finalSignature">
+            <p class="signature-line">With all my love and gratitude,</p>
+            <p class="signature-name">
+              Horlaholuwa <span aria-hidden="true">&#10084;</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
